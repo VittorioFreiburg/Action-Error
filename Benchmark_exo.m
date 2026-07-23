@@ -231,7 +231,7 @@ plot(0:demo_steps, x_ref_deploy(1:demo_steps+1), ':', 'Color', c_ref, 'LineWidth
 plot(0:demo_steps, x_base, '--', 'Color', c_base, 'LineWidth', 1.5, 'DisplayName', 'Baseline Only (Lag)');
 plot(0:demo_steps, x_off,  '-',  'Color', c_off,  'LineWidth', 1.5, 'DisplayName', 'Offline NN (Action Error)');
 plot(0:demo_steps, x_on,   '-',  'Color', c_on,   'LineWidth', 2.5, 'DisplayName', 'Online NN (Optimal)');
-xlabel('Time Step $k$', 'Interpreter', 'latex'); ylabel('State $x_k$', 'Interpreter', 'latex');
+xlabel('Time Step $k$', 'Interpreter', 'latex'); ylabel('State $x_k$ (rad)', 'Interpreter', 'latex');
 title('(a) Time Series: Standard Architecture', 'Interpreter', 'latex', 'FontSize', 14);
 legend('Location', 'southwest'); ylim([-2.0, 2.0]);
 
@@ -242,7 +242,7 @@ plot(0:demo_steps, x_on,  '-', 'Color', c_on,  'LineWidth', 2.5, 'DisplayName', 
 %plot(0:demo_steps, x_ab1, '-', 'Color', c_ab1, 'LineWidth', 1.5, 'DisplayName', 'No Buffer (Explodes)');
 plot(0:demo_steps, x_ab2, '-', 'Color', c_ab2, 'LineWidth', 1.5, 'DisplayName', 'Sluggish LR (Lag)');
 plot(0:demo_steps, x_ab3, '-', 'Color', c_ab3, 'LineWidth', 1.5, 'DisplayName', 'Unstable LR (Chatter)');
-xlabel('Time Step $k$', 'Interpreter', 'latex'); ylabel('State $x_k$', 'Interpreter', 'latex');
+xlabel('Time Step $k$', 'Interpreter', 'latex'); ylabel('State $x_k$ (rad)', 'Interpreter', 'latex');
 title('(b) Time Series: Online Ablation Studies', 'Interpreter', 'latex', 'FontSize', 14);
 legend('Location', 'southwest', 'FontSize', 9); ylim([-2.0, 2.0]);
 
@@ -251,7 +251,7 @@ subplot(2, 2, 3); hold on; grid on;
 plot(x_base(1:end-1), x_base(2:end), '--', 'Color', c_base, 'LineWidth', 1.0, 'DisplayName', 'Baseline');
 plot(x_off(1:end-1),  x_off(2:end),  '-',  'Color', c_off,  'LineWidth', 1.0, 'DisplayName', 'Offline NN');
 plot(x_on(1:end-1),   x_on(2:end),   '-',  'Color', c_on,   'LineWidth', 2.0, 'DisplayName', 'Online NN');
-xlabel('Current State $x_k$', 'Interpreter', 'latex'); ylabel('Next State $x_{k+1}$', 'Interpreter', 'latex');
+xlabel('Current State $x_k$', 'Interpreter', 'latex'); ylabel('Next State $x_{k+1} (rad)$', 'Interpreter', 'latex');
 title('(c) Return Map: Limit Cycles', 'Interpreter', 'latex', 'FontSize', 14);
 xline(0, 'k:', 'HandleVisibility', 'off'); yline(0, 'k:', 'HandleVisibility', 'off');
 xlim([-2.0, 2.0]); ylim([-2.0, 2.0]);
@@ -262,7 +262,7 @@ plot(x_on(1:end-1),  x_on(2:end),  '-', 'Color', c_on,  'LineWidth', 2.0, 'Displ
 %plot(x_ab1(1:end-1), x_ab1(2:end), '-', 'Color', c_ab1, 'LineWidth', 1.0, 'DisplayName', 'No Buffer');
 plot(x_ab2(1:end-1), x_ab2(2:end), '-', 'Color', c_ab2, 'LineWidth', 1.0, 'DisplayName', 'Sluggish LR');
 plot(x_ab3(1:end-1), x_ab3(2:end), '-', 'Color', c_ab3, 'LineWidth', 1.0, 'DisplayName', 'Unstable LR');
-xlabel('Current State $x_k$', 'Interpreter', 'latex'); ylabel('Next State $x_{k+1}$', 'Interpreter', 'latex');
+xlabel('Current State $x_k$', 'Interpreter', 'latex'); ylabel('Next State $x_{k+1} (rad)$', 'Interpreter', 'latex');
 title('(d) Return Map: Ablation Instabilities', 'Interpreter', 'latex', 'FontSize', 14);
 xline(0, 'k:', 'HandleVisibility', 'off'); yline(0, 'k:', 'HandleVisibility', 'off');
 xlim([-2.0, 2.0]); ylim([-2.0, 2.0]);

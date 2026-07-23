@@ -124,7 +124,15 @@ fprintf('Stable (Converged) Runs: %d\n', converged_count);
 fprintf('Unstable (Diverged) Runs: %d\n\n', diverged_count);
 
 % Helper to format strings as "Mean (\sigma^2: Variance)"
-fmt = @(data) sprintf('%.4f (\\\\sigma^2: %.4f)', mean(data), var(data));
+% Helper to format strings and ignore NaNs
+fmt = @(data) sprintf('%.4f (\\\\sigma^2: %.4f)', mean(data, 'omitnan'), var(data, 'omitnan'));
+
+% Optional: Count how many times the baseline physically exploded
+base_nan_count = sum(isnan(mse_base_all));
+fprintf('Note: The Baseline PD physically exploded (NaN) in %d of the stable offline runs.\n\n', base_nan_count);
+
+fprintf('=== LATEX TABLE GENERATION ===\n');
+% ... (rest of the table generation remains exactly the same)
 
 fprintf('=== LATEX TABLE GENERATION ===\n');
 fprintf('\\begin{table}[htpb]\n');
