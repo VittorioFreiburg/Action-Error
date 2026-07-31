@@ -54,6 +54,13 @@ function [S_history, S_norm] = compute_action_error_sensitivity(plant_bb, net_ob
         Phi_k = df_dx - df_du * dg_dx; 
         Lambda_k = -df_du * dg_dtheta;
         
+        % --- DIAGNOSTIC: Track Loss of Local Schur Stability ---
+        % Calculate the spectral radius of the time-varying Jacobian
+        rho_Phi = max(abs(eig(Phi_k)));
+        if rho_Phi >= 1.0 && k > 1 && max(abs(eig(S_history(k-1, :)))) < 1.0
+            fprintf('WARNING: Schur stability lost at step k=%d (rho = %.4f). State pushed into nonlinear/saturation regime.\n', k, rho_Phi);
+        end
+
         % 6. Propagate State Sensitivity
         S_k = Phi_k * S_k + Lambda_k;
         
