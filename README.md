@@ -1,5 +1,7 @@
 # Action-Error: Training and Deploying Neural Networks in the Control Loop
 
+[![DOI](https://zenodo.org/badge/1215871336.svg)](https://doi.org/10.5281/zenodo.22774300)
+
 This repository contains the MATLAB source code and simulation environment for the paper: **"Learning Changes the World and Then What Was Learned has Changed: Training and Deploying Neural Networks in the Control Loop,"** submitted to ICINCO 2026[cite: 3, 4]. 
 
 ## 📖 Background & Justification

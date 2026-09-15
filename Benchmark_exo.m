@@ -1,4 +1,6 @@
 % test_benchmark_script_final_master.m
+% DOI: 10.5281/zenodo.22774300
+% https://doi.org/10.5281/zenodo.22774300
 clear; clc; close all;
 
 % --- CONFIGURATION ---
