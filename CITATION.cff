@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software or simulation suite, please cite both the paper and this repository."
+title: "Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop (Reproduction Suite)"
+authors:
+  - family-names: "Lippi"
+    given-names: "Vittorio"
+    affiliation: "Calejo Hybrid Intelligence AB"
+    orcid: "https://orcid.org/0000-0001-5520-8974"
+contact:
+  - family-names: "Lippi"
+    given-names: "Vittorio"
+    affiliation: "Calejo Hybrid Intelligence AB"
+    email: "vittorio.lippi@calejo.ai"
+abstract: >-
+  Simulation suite and companion code reproducing all numerical experiments,
+  drift return maps, density evolution, and bifurcation diagrams for the
+  paper 'Learning Changes the World and Then What Was Learned Has Changed:
+  Training and Deploying Neural Networks in the Control Loop'.
+keywords:
+  - "adaptive control"
+  - "neural networks"
+  - "closed-loop systems"
+  - "action error"
+  - "distributional shift"
+  - "system identification"
+  - "robotics"
+  - "duffing oscillator"
+  - "time-scale separation"
+  - "ICINCO 2026"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-26"
+repository-code: "https://github.com/vlippi/sto-adaptive-control"
+identifiers:
+  - type: doi
+    value: "10.5220/0015198100004979"
+    description: "Official conference proceedings DOI"
+  - type: doi
+    value: "10.5281/zenodo.22774300"
+    description: "Zenodo software and data repository"
+  - type: other
+    value: "arXiv:2610.22084"
+    description: "arXiv preprint"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Lippi"
+      given-names: "Vittorio"
+      affiliation: "Calejo Hybrid Intelligence AB"
+      orcid: "https://orcid.org/0000-0001-5520-8974"
+  title: "Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop"
+  collection-title: "Proceedings of the 23rd International Conference on Informatics in Control, Automation and Robotics - Volume 1: ICINCO"
+  publisher:
+    name: "SciTePress"
+  year: 2026
+  month: 10
+  start: 15
+  end: 26
+  pages: "15-26"
+  doi: "10.5220/0015198100004979"
+  isbn: "978-989-758-870-9"
+  issn: "2184-2809"

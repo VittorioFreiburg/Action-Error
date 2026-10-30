@@ -1,0 +1,55 @@
+{
+  "title": "Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop (Reproduction Suite)",
+  "description": "Official simulation codes, numerical experiments, and dataset reproduction suite for the paper 'Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop' by Vittorio Lippi (presented at ICINCO 2026). Includes ensemble Monte Carlo scripts for empirical verification of time-scale separation (Theorem 2), regularized equilibrium shifts, two-phase deployment action error recovery, persistent excitation identifiability trap avoidance, period-doubling bifurcation sweeps, and non-convex neural MLP policy adaptation.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lippi, Vittorio",
+      "affiliation": "Calejo Hybrid Intelligence AB",
+      "orcid": "0000-0001-5520-8974"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Lippi, Vittorio",
+      "affiliation": "Calejo Hybrid Intelligence AB",
+      "orcid": "0000-0001-5520-8974",
+      "type": "SoftwareEngineer"
+    }
+  ],
+  "keywords": [
+    "Machine Learning",
+    "Neural Networks",
+    "Closed-Loop Systems",
+    "Adaptive Control",
+    "Distributional Shift",
+    "Action Error",
+    "System Identification",
+    "Robotics",
+    "Duffing Oscillator",
+    "Time-Scale Separation",
+    "ICINCO 2026"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5220/0015198100004979",
+      "resource_type": "publication-conferencepaper",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.48550/arXiv.2610.22084",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "urn:isbn:978-989-758-870-9",
+      "resource_type": "publication-book",
+      "scheme": "urn"
+    }
+  ]
+}

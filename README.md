@@ -1,8 +1,14 @@
 # Action-Error: Training and Deploying Neural Networks in the Control Loop
 
+[![Paper DOI: 10.5220/0015198100004979](https://img.shields.io/badge/Paper%20DOI-10.5220%2F0015198100004979-blue.svg)](https://doi.org/10.5220/0015198100004979)
 [![DOI](https://zenodo.org/badge/1215871336.svg)](https://doi.org/10.5281/zenodo.22774300)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.22084-b31b1b.svg)](https://arxiv.org/abs/2610.22084)
 
-This repository contains the MATLAB source code and simulation environment for the paper: **"Learning Changes the World and Then What Was Learned has Changed: Training and Deploying Neural Networks in the Control Loop,"** submitted to ICINCO 2026[cite: 3, 4]. 
+This repository contains the MATLAB source code and simulation environment for the paper: **"Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop,"** published in *Proceedings of the 23rd International Conference on Informatics in Control, Automation and Robotics (ICINCO 2026)*, Vol. 1, pages 15–26, ISBN: 978-989-758-870-9, ISSN: 2184-2809, SciTePress.
+
+* **Official Paper DOI:** [10.5220/0015198100004979](https://doi.org/10.5220/0015198100004979)
+* **Preprint:** [arXiv:2610.22084 [stat.ML]](https://arxiv.org/abs/2610.22084)
+* **Software Archive:** [DOI: 10.5281/zenodo.22774300](https://doi.org/10.5281/zenodo.22774300)
 
 ## 📖 Background & Justification
 
@@ -39,6 +45,43 @@ We validate these concepts using a 1-DOF nonlinear Duffing oscillator, which ser
 
 **To generate the statistical data (Table 1 in the paper):**
 1. Run `run_monte_carlo.m`. This script suppresses standard plotting output and will take a few minutes to execute 100 iterations. It will print the final aggregated data directly to the command window.
+
+## 📖 Citation
+
+If you use this codebase or the theoretical taxonomy in your research, please cite our official conference paper and software release:
+
+### Official Conference Paper
+> Lippi, V. (2026). Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop. In *Proceedings of the 23rd International Conference on Informatics in Control, Automation and Robotics - Volume 1: ICINCO*; ISBN 978-989-758-870-9; ISSN 2184-2809, SciTePress, pages 15-26. DOI: [10.5220/0015198100004979](https://doi.org/10.5220/0015198100004979)
+
+```bibtex
+@inproceedings{lippi2026learning,
+  title     = {Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop},
+  author    = {Lippi, Vittorio},
+  booktitle = {Proceedings of the 23rd International Conference on Informatics in Control, Automation and Robotics - Volume 1: ICINCO},
+  volume    = {1},
+  pages     = {15--26},
+  year      = {2026},
+  publisher = {SciTePress},
+  isbn      = {978-989-758-870-9},
+  issn      = {2184-2809},
+  doi       = {10.5220/0015198100004979},
+  url       = {https://doi.org/10.5220/0015198100004979},
+  eprint    = {2610.22084},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML}
+}
+
+@software{lippi_sto_code_2026,
+  author       = {Lippi, Vittorio},
+  title        = {Learning Changes the World and Then What Was Learned Has Changed: Training and Deploying Neural Networks in the Control Loop (Reproduction Suite)},
+  month        = oct,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.22774300},
+  url          = {https://doi.org/10.5281/zenodo.22774300}
+}
+```
 
 ## 📄 License
 This project is licensed under the GNU General Public License v3.0 - see the `LICENSE` file for details.
